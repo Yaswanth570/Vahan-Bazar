@@ -67,3 +67,4 @@ The prototype emphasizes **accessibility-first design**, responsive layouts, and
 | [Member 2 Name]   | Worked on detailed bike pages, EMI calculators, maintenance costs          |
 | [Member 3 Name]   | Implemented sell-used-bike form, dealer dashboard, inventory management    |
 | [Member 4 Name]   | Designed community hub, accessibility features, and bilingual support     |
+|[Member 5 Name]    |  Github Repository management and Documentation                            |
