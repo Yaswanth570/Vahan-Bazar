@@ -1,0 +1,74 @@
+/* Auth.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.skyblue-bg {
+  background: #87ceeb; /* Sky Blue background */
+}
+
+.auth-box {
+  background: #ffffff; /* White box */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.auth-title {
+  color: #1e90ff; /* Dodger Blue / accent */
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #1e90ff; /* Dodger Blue border */
+  outline: none;
+  font-size: 16px;
+}
+
+.auth-input:focus {
+  border-color: #00bfff; /* Deep Sky Blue on focus */
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff; /* Dodger Blue button */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00bfff; /* Deep Sky Blue on hover */
+}
+
+.auth-text {
+  margin-top: 15px;
+  color: #1e90ff;
+}
+
+.auth-text a {
+  color: #00bfff; /* Deep Sky Blue link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-text a:hover {
+  text-decoration: underline;
+}

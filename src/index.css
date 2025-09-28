@@ -1,0 +1,435 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vahan Bazar Design System - Two Wheeler Marketplace */
+
+@layer base {
+  :root {
+    /* Light Pastel Core Backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 20%;
+
+    /* Soft Cards & Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 20%;
+    --surface: 240 20% 98%;
+    --surface-foreground: 240 10% 30%;
+
+    /* Light Pastel Brand Colors */
+    --primary: 200 85% 65%;        /* Soft sky blue - calm & trustworthy */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 200 85% 92%;
+    --primary-dark: 200 85% 45%;
+
+    --secondary: 320 65% 75%;      /* Soft lavender - gentle & modern */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 320 65% 90%;
+    --secondary-dark: 320 65% 55%;
+
+    --accent: 160 60% 65%;         /* Soft mint - fresh & eco-friendly */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 160 60% 90%;
+    --accent-dark: 160 60% 45%;
+
+    --warning: 45 85% 70%;         /* Soft peach - warm attention */
+    --warning-foreground: 240 10% 20%;
+
+    --destructive: 0 70% 65%;      /* Soft coral - gentle error state */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Soft UI Elements */
+    --muted: 240 20% 96%;
+    --muted-foreground: 240 10% 50%;
+    
+    --border: 240 20% 88%;
+    --input: 240 20% 96%;
+    --ring: 200 85% 65%;
+
+    /* Gentle Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 65%), hsl(220 85% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(320 65% 75%), hsl(300 65% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 60% 65%), hsl(140 60% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 65%), hsl(320 65% 75%));
+
+    /* Soft Shadows */
+    --shadow-card: 0 2px 8px -2px hsl(240 10% 20% / 0.08), 0 1px 4px -1px hsl(240 10% 20% / 0.04);
+    --shadow-hover: 0 8px 25px -4px hsl(240 10% 20% / 0.12), 0 4px 12px -2px hsl(240 10% 20% / 0.06);
+    --shadow-glow: 0 0 20px hsl(200 85% 65% / 0.15);
+
+    /* Accessibility */
+    --focus-ring: 200 85% 65%;
+    --high-contrast-bg: 0 0% 100%;
+    --high-contrast-fg: 0 0% 0%;
+
+    --radius: 0.75rem;
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-gentle: all 0.2s ease-out;
+  }
+
+  /* Dark Mode */
+  .dark {
+    /* Dark Core Backgrounds */
+    --background: 240 10% 8%;
+    --foreground: 240 10% 95%;
+
+    /* Dark Cards & Surfaces */
+    --card: 240 10% 10%;
+    --card-foreground: 240 10% 95%;
+    --surface: 240 10% 12%;
+    --surface-foreground: 240 10% 85%;
+
+    /* Dark Pastel Brand Colors */
+    --primary: 200 85% 70%;        /* Brighter sky blue for dark mode */
+    --primary-foreground: 240 10% 8%;
+    --primary-light: 200 85% 85%;
+    --primary-dark: 200 85% 55%;
+
+    --secondary: 320 65% 80%;      /* Brighter lavender for dark mode */
+    --secondary-foreground: 240 10% 8%;
+    --secondary-light: 320 65% 90%;
+    --secondary-dark: 320 65% 60%;
+
+    --accent: 160 60% 70%;         /* Brighter mint for dark mode */
+    --accent-foreground: 240 10% 8%;
+    --accent-light: 160 60% 85%;
+    --accent-dark: 160 60% 50%;
+
+    --warning: 45 85% 75%;         /* Brighter peach for dark mode */
+    --warning-foreground: 240 10% 8%;
+
+    --destructive: 0 70% 70%;      /* Brighter coral for dark mode */
+    --destructive-foreground: 240 10% 8%;
+
+    /* Dark UI Elements */
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 10% 60%;
+    
+    --border: 240 10% 20%;
+    --input: 240 10% 15%;
+    --ring: 200 85% 70%;
+
+    /* Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 70%), hsl(220 85% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(320 65% 80%), hsl(300 65% 75%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 60% 70%), hsl(140 60% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 70%), hsl(320 65% 80%));
+
+    /* Dark Shadows */
+    --shadow-card: 0 2px 8px -2px hsl(240 10% 8% / 0.3), 0 1px 4px -1px hsl(240 10% 8% / 0.2);
+    --shadow-hover: 0 8px 25px -4px hsl(240 10% 8% / 0.4), 0 4px 12px -2px hsl(240 10% 8% / 0.3);
+    --shadow-glow: 0 0 20px hsl(200 85% 70% / 0.25);
+
+    /* Dark Accessibility */
+    --focus-ring: 200 85% 70%;
+    --high-contrast-bg: 240 10% 8%;
+    --high-contrast-fg: 240 10% 95%;
+  }
+
+  /* High contrast mode for accessibility */
+  .high-contrast {
+    --background: var(--high-contrast-bg);
+    --foreground: var(--high-contrast-fg);
+    --card: var(--high-contrast-bg);
+    --card-foreground: var(--high-contrast-fg);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+  }
+
+  /* Typography Hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* Smooth text rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+  }
+
+  /* Media normalization to fix inline gaps/alignment */
+  img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Large text mode for accessibility */
+  .large-text {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+
+  .large-text h1 { font-size: 3rem !important; }
+  .large-text h2 { font-size: 2.5rem !important; }
+  .large-text h3 { font-size: 2rem !important; }
+  .large-text button { font-size: 1.5rem !important; padding: 1rem 2rem !important; }
+}
+
+@layer components {
+  /* Hero gradient background */
+  .hero-bg {
+    background: var(--gradient-hero);
+  }
+
+  /* Enhanced Card hover effects with gentle animations */
+  .card-hover {
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+    border: 1px solid transparent;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: var(--shadow-hover);
+    border-color: hsl(var(--primary) / 0.2);
+  }
+
+  /* Soft gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gentle button glow effect */
+  .btn-glow:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-1px);
+  }
+
+  /* Soft pulse animation for notifications */
+  .pulse-ring {
+    animation: pulse-ring 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-ring {
+    0%, 100% { 
+      transform: scale(1); 
+      opacity: 0.8; 
+    }
+    50% { 
+      transform: scale(1.05); 
+      opacity: 1; 
+    }
+  }
+
+  /* Floating animation for hero elements */
+  .float-gentle {
+    animation: float-gentle 6s ease-in-out infinite;
+  }
+
+  @keyframes float-gentle {
+    0%, 100% { 
+      transform: translateY(0px); 
+    }
+    50% { 
+      transform: translateY(-10px); 
+    }
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  @keyframes fade-in {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+
+  /* Slide in from left */
+  .slide-in-left {
+    animation: slide-in-left 0.6s ease-out;
+  }
+
+  @keyframes slide-in-left {
+    from { 
+      opacity: 0; 
+      transform: translateX(-30px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateX(0); 
+    }
+  }
+
+  /* Slide in from right */
+  .slide-in-right {
+    animation: slide-in-right 0.6s ease-out;
+  }
+
+  @keyframes slide-in-right {
+    from { 
+      opacity: 0; 
+      transform: translateX(30px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateX(0); 
+    }
+  }
+
+  /* Scale in animation */
+  .scale-in {
+    animation: scale-in 0.4s ease-out;
+  }
+
+  @keyframes scale-in {
+    from { 
+      opacity: 0; 
+      transform: scale(0.9); 
+    }
+    to { 
+      opacity: 1; 
+      transform: scale(1); 
+    }
+  }
+
+  /* Gentle bounce for interactive elements */
+  .bounce-gentle {
+    transition: var(--transition-bounce);
+  }
+
+  .bounce-gentle:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  /* Soft focus ring for accessibility */
+  .focus-ring {
+    transition: var(--transition-gentle);
+  }
+
+  .focus-ring:focus-visible {
+    outline: 2px solid hsl(var(--primary) / 0.6);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px hsl(var(--primary) / 0.1);
+  }
+
+  /* Spacious layout utilities */
+  .spacious-section {
+    padding: 4rem 0;
+  }
+
+  .spacious-container {
+    padding: 2rem 1.5rem;
+    max-width: 1280px; /* center main content to avoid wide misalignment */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spacious-card {
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* Alignment and layout utilities */
+  .grid-autofit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+
+  .align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .align-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .icon-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .media-16x9 {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .media-square {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+  .media-16x9 > img, .media-square > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .no-gap-img { line-height: 0; }
+
+  table th, table td { vertical-align: middle; }
+
+  /* Enhanced spacing for mobile */
+  @media (max-width: 768px) {
+    .spacious-section {
+      padding: 2.5rem 0;
+    }
+    
+    .spacious-container {
+      padding: 1.5rem 1rem;
+    }
+    
+    .spacious-card {
+      padding: 1.5rem;
+      margin: 0.75rem 0;
+    }
+  }
+}
