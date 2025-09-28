@@ -61,10 +61,10 @@ The prototype emphasizes **accessibility-first design**, responsive layouts, and
 
 ## 👥 Team Contributions
 
-| Team Member        | Contribution                                                                 |
-|-------------------|----------------------------------------------------------------------------|
-| Yaswanth Kumar     | Developed homepage, browse/search pages, bike comparison, AI matchmaker.    |
-| [Member 2 Name]   | Worked on detailed bike pages, EMI calculators, maintenance costs.          |
-| [Member 3 Name]   | Implemented sell-used-bike form, dealer dashboard, inventory management.    |
-| [Member 4 Name]   | Designed community hub, accessibility features, and bilingual support.     |
-|[Member 5 Name]    |  Github Repository Management and Documentation, Fixing bugs.                            |
+| Team Member          | Contribution                                                                                                         |
+|---------------------|---------------------------------------------------------------------------------------------------------------------|
+| Aravind Sai         | Team Leader & Frontend Developer: Coordinated team, designed frontend with React, ensured smooth navigation and user-friendly experience. |
+| Venkata Pavan Sai   | Frontend Developer – Prototype & Presentation: Worked on UI components, improved user flow, smart filters, and bike comparison tools. |
+| Ganesh              | Backend Developer – Server & AI Integration: Handled server-side logic with Node.js, integrated AI APIs, enabled real-time recommendations and eco-impact analysis. |
+| Yaswanth Kumar      | Backend Developer – Installation, Setup & Unique Features: Managed project setup, deployment, 360° bike view, AI chatbot, bike match recommendations, real-time eco calculator, smart filters, and comparison tools. |
+| Parhivram           | GitHub Management & Documentation: Maintained repository, fixed bugs, prepared clear technical documentation, and planned future enhancements. |
